@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cart - ProjectMentor Pro Store</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">ProjectMentor Pro <span>Store</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product-risk-register.html">Risk Register</a>
+      <a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a>
+    </nav>
+  </div>
+</header>
+
+<section class="cart-section">
+  <div class="container">
+    <h1>Your Cart</h1>
+    <div id="cart-items"></div>
+    <div class="cart-total">
+      <strong>Total: <span id="cart-total">$0</span></strong>
+    </div>
+    <button class="btn btn-large" onclick="checkout()">Proceed to Checkout</button>
+    <p class="prototype-note">Prototype note: checkout and payment processing (Stripe) are not yet wired up. This button is a placeholder for the live version.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 ProjectMentor Pro. All templates created by Cassandra Taylor, PMP&reg;.</p>
+  </div>
+</footer>
+<script src="cart.js"></script>
+<script>
+renderCart();
+function checkout(){
+  alert("Checkout is coming soon! Stripe payment processing will be added here.");
+}
+</script>
+</body>
+</html>

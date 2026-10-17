@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Risk Register & Mitigation Tracker - ProjectMentor Pro Store</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">ProjectMentor Pro <span>Store</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product-risk-register.html">Risk Register</a>
+      <a href="cart.html" class="cart-link">Cart <span id="cart-count">0</span></a>
+    </nav>
+  </div>
+</header>
+
+<section class="product-detail">
+  <div class="container product-detail-grid">
+    <div class="product-gallery">
+      <div class="gallery-main">Dashboard Preview</div>
+      <div class="gallery-thumbs">
+        <div class="thumb">Dashboard</div>
+        <div class="thumb">Risk Register</div>
+        <div class="thumb">Mitigation Log</div>
+        <div class="thumb">Settings</div>
+      </div>
+    </div>
+    <div class="product-info">
+      <h1>Risk Register &amp; Mitigation Tracker</h1>
+      <p class="byline">By Cassandra Taylor, PMP&reg; &middot; ProjectMentor Pro&trade;</p>
+      <p class="price-large">$19</p>
+      <p class="product-desc">Stop losing track of risks in scattered notes and old emails. This Excel / Google Sheets workbook gives you a live dashboard with a 5x5 risk heat map and your top 5 open risks at a glance, a 100-row risk register that auto-calculates score and level, a mitigation log linked to each risk ID, and a Settings tab where you can adjust thresholds and categories to fit your project.</p>
+      <ul class="feature-list">
+        <li>Dashboard with KPIs, heat map, and top 5 open risks</li>
+        <li>100-row Risk Register with automatic scoring and review flags</li>
+        <li>Linked Mitigation Log to track action items</li>
+        <li>Fully editable Settings tab: scales, categories, thresholds</li>
+        <li>Works in Excel and Google Sheets</li>
+        <li>Instant digital download</li>
+      </ul>
+      <button class="btn btn-large" onclick="addToCart()">Add to Cart - $19</button>
+      <p class="upsell-note">Also used as a bonus template inside ProjectMentor Pro coaching and bootcamp programs.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 ProjectMentor Pro. All templates created by Cassandra Taylor, PMP&reg;.</p>
+  </div>
+</footer>
+<script src="cart.js"></script>
+<script>
+function addToCart(){
+  addItemToCart({id:"risk-register", name:"Risk Register & Mitigation Tracker", price:19});
+  alert("Added to cart!");
+}
+</script>
+</body>
+</html>
